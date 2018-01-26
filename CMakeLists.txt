@@ -25,9 +25,9 @@ list(APPEND CMAKE_PREFIX_PATH "$ENV{CMAKE_PREFIX_PATH}")
 # If you remove this guard to compile with older gcc versions the miner will produce
 # a high rate of wrong shares.
 if(${CMAKE_CXX_COMPILER_ID} STREQUAL "GNU")
-    if(CMAKE_CXX_COMPILER_VERSION VERSION_LESS 5.1)
-        message(FATAL_ERROR "g++ version must be at least 5.1!")
-    endif()
+    #if(CMAKE_CXX_COMPILER_VERSION VERSION_LESS 5.1)
+     #   message(FATAL_ERROR "g++ version must be at least 5.1!")
+    #endif()
 endif()
 
 set(BUILD_TYPE "Release;Debug")
